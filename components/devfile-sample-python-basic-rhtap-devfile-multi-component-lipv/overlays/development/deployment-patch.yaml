@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rhtap-devfile-multi-component-lipv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-nvwc-tenant/mc-two-scenarios/devfile-sample-python-basic-rhtap-devfile-multi-component-lipv@sha256:a13aac9cdfe4d1f3ca5b2294e43720d1cc1eeb365de2e55b41b7a5103bc06e93
+        name: my-python
+        resources: {}
+status: {}
